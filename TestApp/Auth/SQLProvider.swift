@@ -11,6 +11,7 @@ import SQLite3
 import SQLite
 
 class SQLProvider {
+    
 static private(set) var database: Connection!
 
     static func connect() {

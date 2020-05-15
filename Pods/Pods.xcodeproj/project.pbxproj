@@ -120,7 +120,7 @@
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		472BD1A8A85079787BFAF5029B0C5989 /* Pods-TestApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestApp-Info.plist"; sourceTree = "<group>"; };
 		47F7D8BA9B7A695FDB87A8343A733A78 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
-		4A39DFAF8E149791735265F0E18EBECD /* HKCalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HKCalendarView.framework; path = HKCalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A39DFAF8E149791735265F0E18EBECD /* HKCalendarView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HKCalendarView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA84916C4AA0155ADA3DBF62B2D5EE6 /* CalendarView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CalendarView.xib; path = Calendar/Source/Core/CalendarView.xib; sourceTree = "<group>"; };
 		535DB67F12AE407742E784310608BDD5 /* CalendarMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarMonth.swift; path = Calendar/Source/Support/CalendarMonth.swift; sourceTree = "<group>"; };
 		545E57B45D4A40038174D7C3C4550D8E /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		92A6E363FEB06CD4995EDD23F9FD85C3 /* CalendarViewContentStretchMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarViewContentStretchMode.swift; path = Calendar/Source/ConfigurationDescription/CalendarViewContentStretchMode.swift; sourceTree = "<group>"; };
 		9569B0A3C666551CB42A3EA0932FD70F /* Calendar+Range.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Calendar+Range.swift"; path = "Calendar/Source/Support/Utils/Calendar+Range.swift"; sourceTree = "<group>"; };
 		9D48436D90B09D7A07E96D97E936CA56 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0119EF7C78E3109AF03C33551CBEAA7 /* TimelineIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimelineIdentifier.swift; path = Calendar/Source/Core/Timeline/TimelineIdentifier.swift; sourceTree = "<group>"; };
 		A6D38FEAB2017639058E2686CF752657 /* HKCalendarView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HKCalendarView.modulemap; sourceTree = "<group>"; };
 		A993FFF56B6B73AADFE2634E289B094E /* TimeLineDataProvidable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeLineDataProvidable.swift; path = Calendar/Source/Core/Timeline/TimeLineDataProvidable.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		DF104A3B4716D586E9601FB414EE149D /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
 		DF754645BA772936718FC728C8D3FD37 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Calendar/Source/Core/Timeline/Timeline.swift; sourceTree = "<group>"; };
 		E1646F9F729627FC065ACC9BA7B90D9F /* CalendarAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarAnimator.swift; path = Calendar/Source/Support/SupportPrivate/CalendarAnimator.swift; sourceTree = "<group>"; };
-		E537555010E35D7CDF9D7F38811C24DE /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TestApp.framework; path = "Pods-TestApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E537555010E35D7CDF9D7F38811C24DE /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6436D9DF25A77ECB23A8D6B0007DC7C /* CalendarViewCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = CalendarViewCollectionViewCell.xib; path = Calendar/Source/Core/Element/CalendarViewCollectionViewCell.xib; sourceTree = "<group>"; };
 		E71B051270EEA4B6EF8DD728C019582B /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
 		E80CF90320303AE3C7FAFBC3456DC422 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		F116592ECE1AD1DF6D963D98E02288A2 /* CalendarDefines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarDefines.swift; path = Calendar/Source/Support/Utils/CalendarDefines.swift; sourceTree = "<group>"; };
 		F1DAA1A31C5C0A46917F726C41332C75 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		F53EE3732F98ACAFC2D51FA7A9276BC8 /* CalendarDateSelectionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarDateSelectionOperation.swift; path = Calendar/Source/ConfigurationDescription/CalendarDateSelectionOperation.swift; sourceTree = "<group>"; };
-		F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FA45A44C42CC2CA3A324A3E914CE19 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62C10461886452E89C1C890D29849D7 /* CustomTimeLineIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomTimeLineIdentifier.swift; path = Calendar/Source/Core/Timeline/CustomTimeLineIdentifier.swift; sourceTree = "<group>"; };
 		F7375C62045B525395B05005DBADAE7B /* Nibable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Nibable.swift; path = Calendar/Source/Support/SupportPrivate/Nibable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,7 +276,6 @@
 				DD73A944450E5C5ADDD0CBEEF5071345 /* Resources */,
 				805637BCBBF5F81267A31835E3E92537 /* Support Files */,
 			);
-			name = HKCalendarView;
 			path = HKCalendarView;
 			sourceTree = "<group>";
 		};
@@ -359,7 +358,6 @@
 				3E1041C4ADD55DE13E0BE9CCAAC53A74 /* standard */,
 				F043369ECB82A4970031AA85FA8F5D1E /* Support Files */,
 			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
@@ -510,6 +508,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 8B39A59A527A314C598D2E99610D2115 /* Products */;

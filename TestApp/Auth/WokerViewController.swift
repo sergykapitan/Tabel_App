@@ -10,10 +10,11 @@ import UIKit
 import SQLite3
 
 class WokerViewController: UIViewController {
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        SQLProvider.connect()
+        print("Woker work")
        
     }
     
