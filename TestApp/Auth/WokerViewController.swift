@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  WokerViewController.swift
 //  TestApp
 //
 //  Created by Sergey Koriukin on 14/05/2020.
@@ -7,14 +7,16 @@
 //
 
 import UIKit
+import SQLite3
 
-class ViewController: UIViewController {
+class WokerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+       
     }
+    
 
 
 }
-

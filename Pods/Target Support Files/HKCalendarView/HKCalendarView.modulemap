@@ -1,0 +1,6 @@
+framework module HKCalendarView {
+  umbrella header "HKCalendarView-umbrella.h"
+
+  export *
+  module * { export * }
+}
