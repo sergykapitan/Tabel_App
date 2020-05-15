@@ -22,8 +22,8 @@ enum AuthError: LocalizedError {
 
 class AuthModel {
     
-    let mylogin = "myLogin"
-    let myPassword = "myPassword"
+    let mylogin = "l"
+    let myPassword = "p"
     
     
     

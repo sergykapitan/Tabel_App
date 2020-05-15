@@ -19,7 +19,6 @@
 		88B57BEB246D9C3F006176B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88B57BE9246D9C3F006176B2 /* LaunchScreen.storyboard */; };
 		88B57BF4246D9CC3006176B2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B57BF3246D9CC3006176B2 /* AuthViewController.swift */; };
 		88B57BF6246D9CDD006176B2 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B57BF5246D9CDD006176B2 /* AuthModel.swift */; };
-		88B57BF9246DA46C006176B2 /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B57BF8246DA46C006176B2 /* ExtensionViewController.swift */; };
 		88B57BFC246DADB2006176B2 /* ExtensionViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B57BFB246DADB2006176B2 /* ExtensionViewController+.swift */; };
 		F33544C0DE430B6CDE9F8BCC /* Pods_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD41BA9423CE5C2F45E7485B /* Pods_TestApp.framework */; };
 /* End PBXBuildFile section */
@@ -40,7 +39,6 @@
 		88B57BEC246D9C3F006176B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88B57BF3246D9CC3006176B2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		88B57BF5246D9CDD006176B2 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
-		88B57BF8246DA46C006176B2 /* ExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		88B57BFB246DADB2006176B2 /* ExtensionViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtensionViewController+.swift"; sourceTree = "<group>"; };
 		9986BD3B8AAE479A130499F7 /* Pods-TestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.release.xcconfig"; path = "Target Support Files/Pods-TestApp/Pods-TestApp.release.xcconfig"; sourceTree = "<group>"; };
 		FD41BA9423CE5C2F45E7485B /* Pods_TestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +97,10 @@
 				88B57BF2246D9C59006176B2 /* App */,
 				88B57BF7246D9CE6006176B2 /* Auth */,
 				88B57BE2246D9C34006176B2 /* CalendarViewController.swift */,
+				887E6931246DEC02000DAD92 /* DataBaseProvider.swift */,
+				887E692F246DEAD8000DAD92 /* Model.swift */,
+				887E692D246DE956000DAD92 /* SQLProvider.swift */,
+				8885AAB7246DE05100C70B15 /* WokerViewController.swift */,
 				88B57BE4246D9C34006176B2 /* Main.storyboard */,
 				88B57BFA246DA477006176B2 /* Extension */,
 			);
@@ -122,10 +124,6 @@
 			children = (
 				88B57BF3246D9CC3006176B2 /* AuthViewController.swift */,
 				88B57BF5246D9CDD006176B2 /* AuthModel.swift */,
-				8885AAB7246DE05100C70B15 /* WokerViewController.swift */,
-				887E692D246DE956000DAD92 /* SQLProvider.swift */,
-				887E6931246DEC02000DAD92 /* DataBaseProvider.swift */,
-				887E692F246DEAD8000DAD92 /* Model.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -133,7 +131,6 @@
 		88B57BFA246DA477006176B2 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				88B57BF8246DA46C006176B2 /* ExtensionViewController.swift */,
 				88B57BFB246DADB2006176B2 /* ExtensionViewController+.swift */,
 			);
 			path = Extension;
@@ -259,7 +256,6 @@
 				88B57BE3246D9C34006176B2 /* CalendarViewController.swift in Sources */,
 				88B57BDF246D9C34006176B2 /* AppDelegate.swift in Sources */,
 				8885AAB8246DE05100C70B15 /* WokerViewController.swift in Sources */,
-				88B57BF9246DA46C006176B2 /* ExtensionViewController.swift in Sources */,
 				887E6930246DEAD8000DAD92 /* Model.swift in Sources */,
 				88B57BE1246D9C34006176B2 /* SceneDelegate.swift in Sources */,
 				88B57BFC246DADB2006176B2 /* ExtensionViewController+.swift in Sources */,
