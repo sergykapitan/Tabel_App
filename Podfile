@@ -7,5 +7,7 @@ use_frameworks!
 
  	pod 'HKCalendarView'
 	pod 'SQLite.swift', '~> 0.12.0'
+	pod 'RxSwift', '~> 5'
+        pod 'RxCocoa', '~> 5'
 
 end
