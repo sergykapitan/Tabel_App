@@ -10,7 +10,7 @@ import UIKit
 
 class WokerEditorViewController: UIViewController {
     
-      var db: SQLiteDatabase?
+      var db: SQLiteDatabase!
     
 //    init(db: SQLiteDatabase) {
 //        self.db = db
@@ -23,6 +23,7 @@ class WokerEditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItemBar()
+        openDataBase()
     }
     
    
@@ -40,8 +41,9 @@ class WokerEditorViewController: UIViewController {
     @objc func insertTODataBase(_ sender: Any) {
         
         do {
-            try db?.insertContact(contact: Woker(id: 1, name: "Ray"))
+            try db?.insertContact(contact: Woker(id: 5, name: "Ray"))
              navigationController?.popViewController(animated: true)
+            print("1")
         } catch {
             print(db!.errorMessage)
             
@@ -49,7 +51,17 @@ class WokerEditorViewController: UIViewController {
             print("some error")
         }
     }
-    
+    func openDataBase() {
+
+        do {
+            db = try SQLiteDatabase.open(path: part2DbPath!)
+            print("Successfully opened connection to database.")
+        }  catch SQLiteError.OpenDatabase(_) {
+            print("Unable to open database.")
+        }  catch {
+            print("some error")
+        }
+    }
     
     
 }

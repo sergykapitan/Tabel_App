@@ -16,7 +16,7 @@ private enum Database: String {
   case Part2
   
   var path: String? {
-    return tutorialDirectoryUrl?.appendingPathComponent("\(self.rawValue).sqlite").relativePath
+    return tutorialDirectoryUrl?.appendingPathComponent("db.sqlite").relativePath //self.rowValue
   }
 }
 

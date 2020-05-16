@@ -8,26 +8,43 @@
 
 import UIKit
 import SQLite3
+import SQLite
 
 class WokerViewController: UIViewController {
     
+  //  let path = tutorialDirectoryUrl!
+//
+//
+//    let db2 = try Connection("\(path)/db.sqlite3")
+    
+  //  let path2 = NSSearchPathForDirectoriesInDomains(
+  //      .documentDirectory, .userDomainMask, true
+ //   ).first!
+
+   // let db2 = try! Connection("\(path)/db.sqlite3")
+
+    
+  //  let users = Table("Contact")
+  //  let id = Expression<Int64>("id")
     var db: SQLiteDatabase!
     var tableView: UITableView = UITableView()
     var cellReuseIdentifier = "WokerEditorReuseId"
     
-   // let animals =
+ 
     override func viewDidAppear(_ animated: Bool) {
         print(#function)
-        setupTableView()
         tableView.reloadData()
-        let first2 = db.contact(id: 1)
-        print(first2?.name as Any)
+       
     }
     override func viewWillAppear(_ animated: Bool) {
-        setupTableView()
+       print(#function)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
         print(#function)
-        let first = db.contact(id: 1)
-        print(first?.name as Any)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print(#function)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +52,12 @@ class WokerViewController: UIViewController {
         setupTableView()
         navigationItemBar()
         openDataBase()
+        createTable()
+        printTable()
         
     }
     //MARK: - OpenDataBase
     func openDataBase() {
-        
 
         do {
             db = try SQLiteDatabase.open(path: part2DbPath!)
@@ -50,6 +68,33 @@ class WokerViewController: UIViewController {
             print("some error")
         }
     }
+    func createTable() {
+        do {
+          try db.createTable(table: Woker.self)
+        } catch {
+          print(db.errorMessage)
+        }
+    }
+    func insertTable() {
+        do {
+                   try db?.insertContact(contact: Woker(id: 1, name: "Ray"))
+                   print("2")
+               } catch {
+                   print(db!.errorMessage)
+                   
+               } catch {
+                   print("some error")
+               }
+    }
+    func printTable() {
+        if let firstna = db.contact(id: 1) {
+        print("\(firstna.id) \(firstna.name)")
+        }
+        
+    }
+    
+    
+    
    func setupTableView() {
        tableView.frame = CGRect(x: 0, y: 50, width: 320, height: 200)
        tableView.delegate = self
@@ -60,7 +105,7 @@ class WokerViewController: UIViewController {
    }
    
     
-    //MARK: Navigation
+    //MARK: - Navigation
     func navigationItemBar() {
          navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "plus"), style: .plain, target: self, action: #selector(addNewNote(_:)))
     }
@@ -70,6 +115,7 @@ class WokerViewController: UIViewController {
     }
 
 }
+    //MARK: - Extension
 extension WokerViewController: UITableViewDelegate, UITableViewDataSource {
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -78,14 +124,30 @@ extension WokerViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = (tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell?)!
-        let first1 = db.contact(id: 1)
-        print(first1?.name)
-        cell.textLabel?.text = first1?.name as String?
-
+        if let first1 = db.contact(id: 5){
+        cell.textLabel?.text = first1.name as String?
+        }
         return cell
     }
     private func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("You tapped cell number \(indexPath.row).")
+    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            do {
+               try? db.delete(id: 5)
+                self.tableView.reloadData()
+               print("delete")
+            }
+            catch {
+               print(db!.errorMessage)
+            }
+            self.tableView.reloadData()
+        }
     }
     
 }
