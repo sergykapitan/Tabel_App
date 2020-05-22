@@ -22,7 +22,7 @@ extension Woker: SQLTable {
   static var createStatement: String {
     return """
     CREATE TABLE Contact(
-      Id INT PRIMARY KEY NOT NULL,
+      id integer PRIMARY KEY,
       Name CHAR(255)
     );
     """

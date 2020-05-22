@@ -41,9 +41,8 @@ class WokerEditorViewController: UIViewController {
     @objc func insertTODataBase(_ sender: Any) {
         
         do {
-            try db?.insertContact(contact: Woker(id: 5, name: "Ray"))
+            try db?.insertContact(contact: Woker(id: 1, name: "ray"))
              navigationController?.popViewController(animated: true)
-            print("1")
         } catch {
             print(db!.errorMessage)
             

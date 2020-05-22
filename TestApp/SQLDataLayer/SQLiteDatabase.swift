@@ -125,7 +125,6 @@ extension SQLiteDatabase {
     func delete(id: Int32) throws {
         
          let deleteSql = "DELETE FROM Contact WHERE Id = ?;"
-         var deleteStatement: OpaquePointer?
          
          let queryStatement = try? prepareStatement(sql: deleteSql)
          defer {
@@ -140,4 +139,20 @@ extension SQLiteDatabase {
         }
         
     }
+}
+extension SQLiteDatabase {
+    func update() throws {
+        
+        let updateSql = "SELECT * FROM Contact;"
+        
+        let queryStatement = try? prepareStatement(sql: updateSql)
+        defer {
+          sqlite3_finalize(queryStatement)
+        }
+        guard
+            sqlite3_step(queryStatement) == SQLITE_ROW
+               else {
+                   throw SQLiteError.Delete(message: errorMessage) 
+               }
+      }
 }

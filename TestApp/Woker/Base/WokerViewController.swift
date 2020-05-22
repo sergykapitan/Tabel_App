@@ -53,7 +53,6 @@ class WokerViewController: UIViewController {
         navigationItemBar()
         openDataBase()
         createTable()
-        printTable()
         
     }
     //MARK: - OpenDataBase
@@ -75,26 +74,7 @@ class WokerViewController: UIViewController {
           print(db.errorMessage)
         }
     }
-    func insertTable() {
-        do {
-                   try db?.insertContact(contact: Woker(id: 1, name: "Ray"))
-                   print("2")
-               } catch {
-                   print(db!.errorMessage)
-                   
-               } catch {
-                   print("some error")
-               }
-    }
-    func printTable() {
-        if let firstna = db.contact(id: 1) {
-        print("\(firstna.id) \(firstna.name)")
-        }
-        
-    }
-    
-    
-    
+  
    func setupTableView() {
        tableView.frame = CGRect(x: 0, y: 50, width: 320, height: 200)
        tableView.delegate = self
@@ -140,6 +120,8 @@ extension WokerViewController: UITableViewDelegate, UITableViewDataSource {
         if (editingStyle == .delete) {
             do {
                try? db.delete(id: 5)
+              //  tableView.deleteRows(at: [indexPath], with: .none)
+                try? db.update()
                 self.tableView.reloadData()
                print("delete")
             }
